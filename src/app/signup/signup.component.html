@@ -1,1 +1,65 @@
-<p>signup works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mt-4 m-auto">
+      <div class="card p-4">
+        <div class="text-center">
+          <h1>Sing Up</h1>
+        </div>
+        <form [formGroup]="signupForm" (ngSubmit)="signup()">
+          <div class="mb-3">
+            <label for="name" class="form-label"
+              >Name</label
+            >
+            <input
+               formControlName="name" 
+              type="text"
+              class="form-control"
+              id="name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="mobile" class="form-label"
+              >Mobile</label
+            >
+            <input
+            formControlName="mobile" 
+
+              type="text"
+              class="form-control"
+              id="mobile"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+            formControlName="email" 
+
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+            <input
+            formControlName="password" 
+
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Sign up</button>
+        </form>
+        <div class="mt-2">
+            <p>Already signup? <a routerLink="/login">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

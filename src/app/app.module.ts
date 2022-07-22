@@ -6,6 +6,23 @@ import { AppComponent } from './app.component';
 import { RestaurantDashComponent } from './restaurant-dash/restaurant-dash.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+    {
+        path:'', redirectTo:"login", pathMatch:"full"
+    },
+    {
+        path:"login", component: LoginComponent
+    },
+    {
+        path:"signup", component: SignupComponent
+    },
+    {
+        path:"restaurant", component: RestaurantDashComponent
+    },
+]
+
 
 @NgModule({
   declarations: [
@@ -17,7 +34,8 @@ import { SignupComponent } from './signup/signup.component';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

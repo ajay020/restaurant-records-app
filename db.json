@@ -17,6 +17,15 @@
       "id": 7
     }
   ],
+  "signup": [
+    {
+      "name": "joy",
+      "email": "joy@gmail.com",
+      "mobile": "111111",
+      "password": "123456",
+      "id": 1
+    }
+  ],
   "comments": [],
   "profile": {
     "name": "typicode"
