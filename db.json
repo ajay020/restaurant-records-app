@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 6,
+      "name": "Joy",
+      "email": "joy@gmail.com",
+      "mobile": "123456789",
+      "address": "block 23, CA",
+      "service": "Coffee"
+    },
+    {
+      "name": "Bob",
+      "email": "bob@gmail.com",
+      "mobile": "9876543332",
+      "address": "Berlin, Germany",
+      "service": "Fast food",
+      "id": 7
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
